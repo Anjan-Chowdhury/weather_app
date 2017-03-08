@@ -1,4 +1,6 @@
+<div style="background-color: #000000;color: #ffffff">
 <h1> Bangalore Weather With Max Min Temperature With time </h1>
-<p> <%= @forecast %> </p>
+<p> <%#= @forecast %> </p>
 <P> Max Temperature: <%= (((@forecast.daily.data[0].temperatureMax)-32)/1.8)%><sup>o</sup>c : :  Time: <%= Time.at( @forecast.daily.data[0].temperatureMaxTime).localtime.strftime("%H:%M:%S") %> </P> 
 <P> Min Temperature: <%= (((@forecast.daily.data[0].temperatureMin)-32)/1.8)%><sup>o</sup>c : :  Time: <%= Time.at( @forecast.daily.data[0].temperatureMinTime).localtime.strftime("%H:%M:%S") %> </P>
+</div>
